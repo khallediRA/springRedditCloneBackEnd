@@ -3,7 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import com.example.demo.dto.CommentsDTO;
-import com.example.demo.model.Comment;
+
 import com.example.demo.service.CommentService;
 
 import org.springframework.http.HttpStatus;
@@ -16,12 +16,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping("api/comments/")
 @AllArgsConstructor
-@Slf4j
+
 public class CommentController {
     private final CommentService commentService;
 
